@@ -1,8 +1,9 @@
 body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 10vh repeat(1, 500px) 250px 1fr 50vh;
+    grid-template-rows: auto repeat(1, 500px);
     background-color: lightgray;
+    width: 100;
 }
 
 .menu {
@@ -51,6 +52,24 @@ body {
 .menuItens > li {
     display: flex;
 }
+
+.menuToggle {
+    border: solid 1px #777;
+    margin: 1vh;
+}
+
+@media(min-width: 820px) {
+    .menuToggle {
+        display: none;
+    }
+}
+
+@media(max-width: 820px) {
+    .menuItens {
+        display: none;
+    }
+}
+
 
 .camara {
     grid-column: 1 / 6;
@@ -169,10 +188,11 @@ body {
 #deputadosList {
     grid-column: 1 / 6;
     display: flex;
+    justify-items: center;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 5vh 20vh;
+    margin: 20vh;
     margin-bottom: 0vh;
 }
 
@@ -219,6 +239,10 @@ body {
         height: 4vh;
 }
 
+.partidosSec {
+    flex-wrap: wrap;
+}
+
 .container {
     grid-column: 1 / 6;
     display: flex;
@@ -250,7 +274,10 @@ body {
 .bancadasTab {
     grid-column: 1 / 6;
     margin: 2vh auto;
-    
+}
+
+.bancadasTab  table{
+    width: 100%;
 }
 
 .bancadasTab > table > thead > tr > th {
@@ -360,7 +387,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 8vh;
-    margin: 1vh;
+    
+    width: 100%;
 }
 
 #contato > h1.title {
@@ -374,10 +402,15 @@ body {
 
 .contatoForm {
     display: flex;
+    align-items: stretch;
+}
+
+#contato  form {
+    width: 80%;
 }
 
 #fname {
-    width: 70vh;
+    width: 100%;
     border-radius: 4px;
     border: solid 1px grey;
     margin: 1vh 0;
@@ -385,7 +418,7 @@ body {
 }
 
 #femail {
-    width: 70vh;
+    width: 100%;
     border-radius: 4px;
     border: solid 1px grey;
     margin: 1vh 0;
@@ -393,7 +426,7 @@ body {
 }
 
 #fmessage {
-    width: 70vh;
+    width: 100%;
     border-radius: 4px;
     border: solid 1px grey;
     margin: 1vh 0;
@@ -401,6 +434,7 @@ body {
 }
 
 #fsubmit {
+    width: 102%;
     background-color: #003147;
     border: solid 1px grey;
     color: white;

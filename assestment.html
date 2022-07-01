@@ -35,7 +35,11 @@
                 <br>
                 <h1> Questão 02.2: </h1>
                 <p>
-                    De forma a atender os padrões exigidos, e nas localidades corretas.
+                    A utilização correta do CSS para PRINT, No HTML: deve ser linkado um css com atributo type="text/css" e media="print";
+                    No CSS: deve ser adicionado um @media print {} para adicionar as caracteristicas necessárias e importantes para as impressões, como <br>
+                    - Sublinhar links e imprimir seus endereços <br>
+                    - Escolher fonte serifada para textos. <br>
+                    etc.
                 </p>
             </section>
             <section class="Q03">
@@ -52,20 +56,49 @@
                 </p>
                 <h1> Questão 3.2: </h1>
                 <p>
-                    Mesma resposta da questão acima.
+                    A tag Source suporta diversos tipos de conteúdos, como citados acima: MPEG, AVI, WMV, QuickTime, RealVideo, WebM, MP4, etc... 
+                    Já os atributos do elemento vídeo: <br> 
+                    <strong>autoplay:</strong> Executa o vídeo assim que for possível; <br>
+                    <strong>buffered:</strong> Um atributo que pode ser lido para determinar os intervalos do vídeo que já foram carregados. <br>
+                    <strong>height:</strong> Define a altura em pixels. <br>
+                    <strong>controls:</strong> Mostra controles para o usuário controlar o vídeo. <br>
+                    <strong>loop:</strong> Reinicia o vídeo quando ele chegar ao fim. <br>
+                    <strong>muted:</strong> Inicia o vídeo com o audio dele mutado por padrão. <br>
+                    <strong>played:</strong> Um objeto TimeRanges (en-US) indicando que todo o vídeo foi reproduzido. <br>
+                    <strong>poster:</strong> Uma URL indicando uma imagem de prévia do vídeo até o usuário reproduzir ou navegar por ele.  <br>
+                    <strong>src:</strong> Vídeo a ser incorporado, pode ser substituído pelo elemento '< source >' <br>
+                    <strong>width:</strong> define a largura em pixels.
                 </p>
 
                 <h1> Questão 3.3: </h1>
-                <p>É necessário utilizar CSS para fazer animações.</p>
+                <p>
+                    O HTML5 tem encapsulado um conjunto de funcionalidades que ficam encapsuladas em API's web que podem ser acessadas com JS, geralmente as API's web <br>
+                    do HTML5 são API's que se relacionam com alteração e manipulação do DOM. <br>
+                    Algumas dessas API's é o Canvas, para se criar animações então, podem ser utilizadas essas API's, como a do canvas, e/ou CSS. 
+                </p>
 
                 <h1> Questão 3.4: </h1>
                 <div>
-                   não sei
+                   <figure>
+                        <img src="imagens/plenario-camara.png" alt="">
+                   </figure>
+                   O CSS pode ser aplicado em multimídia como foi demonstrado na imagem acima, onde temos o atributo figure, e este está sendo
+                   modificado pelo style: <strong> figure img { <br>
+                        width: "200px" <br>
+                   }</strong> <br>
+                   temos diversas propiedas que podemos alterar, como, max-width, max-height, height, padding, entre outras.
+
                 </div>
             </section>
         </main>
 
         <footer class="footer"></footer>
       </div>
+      <style>
+        figure img {
+           
+            width: 200px;
+        }
+      </style>
 </body>
 </html>
